@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="stylesheet.css" rel="stylesheet">
+  <script language="javascript" type="text/javascript" src="test.js"></script>
+</head>
+<body onload="afterpageload()">
+<div>
+  <button class="tablink" onclick="openTabcontent('Startseite', this, 'green', true)" id="defaultOpen">Startseite</button>
+  <button class="tablink" onclick="openTabcontent('Wissenswertes', this, 'green', true)">Wissenswertes</button>
+  <button class="tablink" onclick="openTabcontent('Plaene', this, 'green', true)">Pläne</button>
+  <button class="tablink" onclick="openTabcontent('Foerderverein', this, 'green', true)">Förderverein</button>
+  <button class="tablink" onclick="openTabcontent('Aktivitaeten', this, 'green', true)">Aktivitäten</button>
+  <button class="tablink" onclick="openTabcontent('Pinnwand', this, 'green', true)">Pinnwand</button>
+  <button class="tablink" onclick="openTabcontent('Galerie', this, 'green', true)">Galerie</button>
+  <button class="tablink" onclick="openTabcontent('Impressum', this, 'green', false)">Impressum</button>
+
+  <div id="Startseite" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('FuA', true , 1)" id="defaultOpen">Formulare und Anträge</button>
+        <div class="subsidelink-1" id="FuA-subsidelink">
+          <button class="subsidelink" onclick="openContent('Entschuldigungsschreiben', false, 2)" id="defaultOpen">Entschuldigungsschreiben</button>
+          <button class="subsidelink" onclick="openContent('Apl', false , 2)" id="defaultOpen">Antrag produktives Lernen</button>
+        </div>
+      <button class="sidelink" onclick="openContent('Ds', false, 1)" id="defaultOpen">Datenschutz</button>
+      <button class="sidelink" onclick="openContent('Se.de', false, 1)" id="defaultOpen">Schulengel.de</button>
+      <button class="sidelink" onclick="openContent('FPiJ', false, 1)" id="defaultOpen">Feste Projekte im Jahr</button>
+    </div>
+    <div id="main-Startseite" class="content">
+      |||CONTENT|||(main-main)
+    </div>
+    <div id="FuA" class="content">
+      |||CONTENT|||(main-FuA)
+    </div>
+    <div id="Entschuldigungsschreiben" class="content">
+      |||CONTENT|||(main-Entschuldigungsschreiben)
+    </div>
+    <div id="Apl" class="content">
+      |||CONTENT|||(main-Apl)
+    </div>
+    <div id="Ds" class="content">
+      |||CONTENT|||(main-ds)
+    </div>
+    <div id="Se.de" class="content">
+      |||CONTENT|||(main-sede)
+    </div>
+    <div id="FPiJ" class="content">
+      |||CONTENT|||(main-fpij)
+    </div>
+  </div>
+
+  <div id="Wissenswertes" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('SchulOrg')" id="defaultOpen">Schulorganisation</button>
+        <div class="subsidelink-1" id="SchulOrg-subsidelink">
+          <button class="subsidelink" onclick="openContent('US' , false , 2)" id="defaultOpen">Unsere Schule</button>
+        </div>
+      <button class="sidelink" onclick="openContent('HO' , false , 1)" id="defaultOpen">Hausordnung</button>
+      <button class="sidelink" onclick="openContent('SchulSoz' , false , 1)" id="defaultOpen">Schuloziealarbeit</button>
+      <button class="sidelink" onclick="openContent('Gesch' , false , 1)" id="defaultOpen">Geschichtliches</button>
+      <button class="sidelink" onclick="openContent('KOP' , false , 1)" id="defaultOpen">Kooperationspartner</button>
+    </div>
+    <div id="main-Wissenswertes" class="content">
+      |||CONTENT|||(wis-main)
+    </div>
+    <div id="SchulOrg" class="content">
+      |||CONTENT|||(wis-schulorg)
+    </div>
+      <div id="US" class="content">
+        |||CONTENT|||(wis-us)
+      </div>
+    <div id="HO" class="content">
+      |||CONTENT|||(wis-ho)
+    </div>
+    <div id="SchulSoz" class="content">
+      |||CONTENT|||(wis-schulsoz)
+    </div>
+    <div id="Gesch" class="content">
+      |||CONTENT|||(wis-gesh)
+    </div>
+    <div id="KOP" class="content">
+      |||CONTENT|||(wis-kop)
+    </div>
+  </div>
+
+  <div id="Plaene" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('VP' , false , 1)" id="defaultOpen">Vertretungsplan</button>
+      <button class="sidelink" onclick="openContent('SuPZ' , false , 1)" id="defaultOpen">Stunden- und Pausenzeiten</button>
+      <button class="sidelink" onclick="openContent('Fer' , false , 1)" id="defaultOpen">Ferientermine</button>
+      <button class="sidelink" onclick="openContent('A|B-W' , false , 1)" id="defaultOpen">A- und B-Wochen</button>
+    </div>
+    <div id="main-Plaene" class="content">
+      |||CONTENT|||(pla-main)
+    </div>
+    <div id="VP" class="content">
+      |||CONTENT|||(pla-vp)
+    </div>
+    <div id="SuPZ" class="content">
+      |||CONTENT|||(pla-supz)
+    </div>
+    <div id="Fer" class="content">
+      |||CONTENT|||(pla-fer)
+    </div>
+    <div id="A|B-W" class="content">
+      |||CONTENT|||(pla-abw)
+    </div>
+  </div>
+
+  <div id="Foerderverein" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('WmdV' , false , 1)" id="defaultOpen">Was macht der Verein?</button>
+      <button class="sidelink" onclick="openContent('Satzung' , false , 1)" id="defaultOpen">Satzung</button>
+      <button class="sidelink" onclick="openContent('MitA' , false , 1)" id="defaultOpen">Mitgliedsantrag</button>
+      <button class="sidelink" onclick="openContent('Flyer' , false , 1)" id="defaultOpen">Flyer</button>
+    </div>
+    <div id="main-Foerderverein" class="content">
+      |||CONTENT|||(foe-main)
+    </div>
+    <div id="WmdV" class="content">
+      |||CONTENT|||(foe-wmdv)
+    </div>
+    <div id="Satzung" class="content">
+      |||CONTENT|||(foe-satz)
+    </div>
+    <div id="MitA" class="content">
+      |||CONTENT|||(foe-mita)
+    </div>
+    <div id="Flyer" class="content">
+      |||CONTENT|||(foe-flyer)
+    </div>
+  </div>
+
+  <div id="Aktivitaeten" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('GTA' , false , 1)" id="defaultOpen">GTA</button>
+      <button class="sidelink" onclick="openContent('PT5' , false , 1)" id="defaultOpen">Projekte Team 5</button>
+      <button class="sidelink" onclick="openContent('PT6' , true , 1)" id="defaultOpen">Projekte Team 6</button>
+        <div class="subsidelink-1" id="PT6-subsidelink">
+          <button class="subsidelink" onclick="openContent('PT6A' , false , 2)" id="defaultOpen">Archiv</button>
+        </div>
+      <button class="sidelink" onclick="openContent('BO' , true , 1)" id="defaultOpen">Berufsorientierung</button>
+        <div class="subsidelink-1" id="BO-subsidelink">
+          <button class="subsidelink" onclick="openContent('Ver' , false , 2)" id="defaultOpen">Veranstaltungen</button>
+          <button class="subsidelink" onclick="openContent('beb' , false , 2)" id="defaultOpen">Berufseinsteigsbegleiter</button>
+          <button class="subsidelink" onclick="openContent('bp' , false , 2)" id="defaultOpen">Betribspraktikum</button>
+        </div>
+    </div>
+    <div id="main-Aktivitaeten" class="content">
+      |||CONTENT|||(akt-main)
+    </div>
+    <div id="GTA" class="content">
+      |||CONTENT|||(akt-gta)
+    </div>
+    <div id="PT5" class="content">
+      |||CONTENT|||(akt-pt5)
+    </div>
+    <div id="PT6" class="content">
+      |||CONTENT|||(akt-pt6)
+    </div>
+      <div id="PT6A" class="content">
+        |||CONTENT|||(akt-pt6a)
+      </div>
+    <div id="BO" class="content">
+      |||CONTENT|||(akt-bo)
+    </div>
+      <div id="Ver" class="content">
+        |||CONTENT|||(akt-ver)
+      </div>
+      <div id="beb" class="content">
+        |||CONTENT|||(akt-beb)
+      </div>
+      <div id="bp" class="content">
+        |||CONTENT|||(akt-bp)
+      </div>
+  </div>
+  <div id="Pinnwand" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('ASJ17/18' , false , 1)" id="defaultOpen">Archiv SJ 2017/2018</button>
+    </div>
+    <div id="main-Pinnwand" class="content">
+      |||CONTENT|||(pin-main)
+    </div>
+    <div id="ASJ17/18" class="content">
+      |||CONTENT|||(pin-asj17-18)
+    </div>
+  </div>
+
+  <div id="Galerie" class="tabcontent">
+    <div class="sidenav">
+      <button class="sidelink" onclick="openContent('Kl-G' , true , 1)" id="defaultOpen">Klassen</button><br>
+        <div class="subsidelink-1" id="Kl-G-subsidelink">
+          <button class="subsidelink" onclick="openContent(5k , false , 2)" id="defaultOpen">5. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(6k , false , 2)" id="defaultOpen">6. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(7k , false , 2)" id="defaultOpen">7. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(8k , false , 2)" id="defaultOpen">8. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(9k , false , 2)" id="defaultOpen">9. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(10k , false , 2)" id="defaultOpen">10. Klassen</button><br>
+          <button class="subsidelink" onclick="openContent(SKL , false , 2)" id="defaultOpen">SKL</button><br>
+        </div>
+      <button class="sidelink" onclick="openContent('Schule-G' , false , 1)" id="defaultOpen">Schule</button>
+    </div>
+    <div id="main-Galerie" class="content">
+      |||CONTENT|||(gal-main)
+    </div>
+    <div id="Kl-G" class="content">
+      |||CONTENT|||(gal-kl-G)
+    </div>
+      <div id="5k" class="content">
+        |||CONTENT|||(gal-5k)
+      </div>
+      <div id="6k" class="content">
+        |||CONTENT|||(gal-6k)
+      </div>
+      <div id="7k" class="content">
+        |||CONTENT|||(gal-7k)
+      </div>
+      <div id="8k" class="content">
+        |||CONTENT|||(gal-8k)
+      </div>
+      <div id="9k" class="content">
+        |||CONTENT|||(gal-9k)
+      </div>
+      <div id="10k" class="content">
+        |||CONTENT|||(gal-10k)
+      </div>
+      <div id="SKL" class="content">
+        |||CONTENT|||(gal-skl)
+      </div>
+    <div id="Schule-G" class="content">
+      |||CONTENT|||(gal-schulg)
+    </div>
+  </div>
+
+  <div id="Impressum" class="tabcontent">
+    <div class="content" id="main-Impressum">
+        |||CONTENT|||(impressum)
+    </div>
+  </div>
+</div>
+</body>
+</html>
