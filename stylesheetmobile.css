@@ -42,3 +42,51 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+ .headnav {
+   float: left;
+   height: 50px;
+   width: 100%;
+ }
+
+ .headnav-left {
+  float: left;
+  height: 50px;
+  width: 14%;
+ }
+
+ .headnav-middle {
+   float: left;
+   width: 72%;
+   text-align: center;
+   padding-top: 7px;
+   padding-bottom: 7px;
+ }
+
+.headnav-right {
+  float: right;
+  width: 14%;
+}
+
+.icon {
+  background-color: #111;
+  border: none;
+  width: 50px;
+  height: 50px;
+  float: right;
+  padding: 0;
+}
+
+.menu-button {
+  color: white;
+  padding: 9px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  background-color: #444;
+  border: none;
+  float: left;
+  outline: none;
+  clear:both;
+  width: 100%;
+  text-align: left;
+}

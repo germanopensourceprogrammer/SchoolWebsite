@@ -12,84 +12,90 @@
 <body onload="onMobileload()">
   <div class="mobile-container">
     <div class="topnav">
-      <div>
+      <div class="headnav">
+        <div class="headnav-left">
         <img width="50px" height="50px" src="/icon/icon-logo.png">
-        Katharinenschule Eisleben
+        </div>
+        <div class="headnav-middle">
+          Katharinenschule <br> Eisleben
+        </div>
+        <div class="headnav-right">
+          <button class="icon" onclick="myFunction()"><img src="/icon/icon-menu.png" width="32px" height="32px"></button>
+        </div>
       </div>
       <div id="myLinks">
-        <button onclick="openMobileContent('main', true, 1)">Startseite</button>
+        <button class="menu-button" onclick="openMobileContent('main', true, 1)">Startseite</button>
         <div class="submenu-1" id="main-submenu">
-          <button onclick="openMobileContent('FuA', true, 2)">-Formulare und Anträge</button>
+          <button class="menu-button" onclick="openMobileContent('FuA', true, 2)">&nbsp;&nbsp;Formulare und Anträge</button>
           <div class="submenu-2" id="FuA-submenu">
-            <button onclick="openMobileContent('Entschuldigungsschreiben', false, null);">--Entschuldigungsschreiben</button>
-            <button onclick="openMobileContent('ApL', false, null)">--Antrag produktives Lernen</button>
+            <button class="menu-button" onclick="openMobileContent('Entschuldigungsschreiben', false, null);">&nbsp;&nbsp;&nbsp;&nbsp;Entschuldigungsschreiben</button>
+            <button class="menu-button" onclick="openMobileContent('ApL', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Antrag produktives Lernen</button>
           </div>
-          <button onclick="openMobileContent('Termine', false, null)">-Termine</button>
-          <button onclick="openMobileContent('Ds', false, null)">-Datenschutz</button>
-          <button onclick="openMobileContent('Se.de', false, null)">-Schulengel.de</button>
-          <button onclick="openMobileContent('FPiJ', false, null)">-Feste Projekte im Jahr</button>
+          <button class="menu-button" onclick="openMobileContent('Termine', false, null)">&nbsp;&nbsp;Termine</button>
+          <button class="menu-button" onclick="openMobileContent('Ds', false, null)">&nbsp;&nbsp;Datenschutz</button>
+          <button class="menu-button" onclick="openMobileContent('Se.de', false, null)">&nbsp;&nbsp;Schulengel.de</button>
+          <button class="menu-button" onclick="openMobileContent('FPiJ', false, null)">&nbsp;&nbsp;Feste Projekte im Jahr</button>
         </div>
-        <button onclick="openMobileContent('main-Wissenswertes', true, 1)">Wissenswertes</button>
+        <button class="menu-button" onclick="openMobileContent('main-Wissenswertes', true, 1)">Wissenswertes</button>
         <div class="submenu-1" id="main-Wissenswertes-submenu">
-          <button onclick="openMobileContent('SchulOrg', true, 2)">-Schulorganisation</button>
+          <button class="menu-button" onclick="openMobileContent('SchulOrg', true, 2)">&nbsp;&nbsp;Schulorganisation</button>
           <div class="submenu-2" id="SchulOrg-submenu">
-            <button onclick="openMobileContent('US', false, null)">--Unsere Schule</button>
+            <button onclick="openMobileContent('US', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Unsere Schule</button>
           </div>
-          <button onclick="openMobileContent('HO', false, null)">-Hausordnung</button>
-          <button onclick="openMobileContent('SchulSoz', false, null)">-SchulSozialarbeit</button>
-          <button onclick="openMobileContent('Gesch', false, null)">-Geschichtliches</button>
-          <button onclick="openMobileContent('KOP', false, null)">-Kooperationspartner</button>
+          <button class="menu-button" onclick="openMobileContent('HO', false, null)">&nbsp;&nbsp;Hausordnung</button>
+          <button class="menu-button" onclick="openMobileContent('SchulSoz', false, null)">&nbsp;&nbsp;SchulSozialarbeit</button>
+          <button class="menu-button" onclick="openMobileContent('Gesch', false, null)">&nbsp;&nbsp;Geschichtliches</button>
+          <button class="menu-button" onclick="openMobileContent('KOP', false, null)">&nbsp;&nbsp;Kooperationspartner</button>
         </div>
-        <button onclick="openMobileContent('main-Plaene', true, 1)">Pläne</button>
+        <button class="menu-button" onclick="openMobileContent('main-Plaene', true, 1)">Pläne</button>
         <div class="submenu-1" id="main-Plaene-submenu">
-          <button onclick="openMobileContent('VP', false, null)">-Vertretungsplan</button>
-          <button onclick="openMobileContent('SuPZ', false, null)">-Stunden- und Pausenzeiten</button>
-          <button onclick="openMobileContent('Fer', false, null)">-Ferientermine</button>
-          <button onclick="openMobileContent('A|B-W', false, null)">-A- und B-Wochen</button>
+          <button class="menu-button" onclick="openMobileContent('VP', false, null)">&nbsp;&nbsp;Vertretungsplan</button>
+          <button class="menu-button" onclick="openMobileContent('SuPZ', false, null)">&nbsp;&nbsp;Stunden- und Pausenzeiten</button>
+          <button class="menu-button" onclick="openMobileContent('Fer', false, null)">&nbsp;&nbsp;Ferientermine</button>
+          <button class="menu-button" onclick="openMobileContent('A|B-W', false, null)">&nbsp;&nbsp;A- und B-Wochen</button>
         </div>
-        <button onclick="openMobileContent('main-Foerderverein', true, 1)">Förderverein</button>
+        <button class="menu-button" onclick="openMobileContent('main-Foerderverein', true, 1)">Förderverein</button>
         <div class="submenu-1" id="main-Foerderverein-submenu">
-          <button onclick="openMobileContent('WmdV', false, null)">-Was macht der Verein</button>
-          <button onclick="openMobileContent('Satzung', false, null)">-Satzung</button>
-          <button onclick="openMobileContent('MitA', false, null)">-Mitgliedsantrag</button>
-          <button onclick="openMobileContent('Flyer', false, null)">-Flyer</button>
+          <button class="menu-button" onclick="openMobileContent('WmdV', false, null)">&nbsp;&nbsp;Was macht der Verein</button>
+          <button class="menu-button" onclick="openMobileContent('Satzung', false, null)">&nbsp;&nbsp;Satzung</button>
+          <button class="menu-button" onclick="openMobileContent('MitA', false, null)">&nbsp;&nbsp;Mitgliedsantrag</button>
+          <button class="menu-button" onclick="openMobileContent('Flyer', false, null)">&nbsp;&nbsp;Flyer</button>
         </div>
-        <button onclick="openMobileContent('main-Aktivitaeten', true, 1)">Aktivitäten</button>
+        <button class="menu-button" onclick="openMobileContent('main-Aktivitaeten', true, 1)">Aktivitäten</button>
         <div class="submenu-1" id="main-Aktivitaeten-submenu">
-          <button onclick="openMobileContent('GTA', false, null)">-GTA - Ganztagsangbote</button>
-          <button onclick="openMobileContent('PT5', false, null)">-Projekte Team 5</button>
-          <button onclick="openMobileContent('PT6', true, 2)">-Projekte Team 6</button>
+          <button class="menu-button" onclick="openMobileContent('GTA', false, null)">&nbsp;&nbsp;GTA - Ganztagsangbote</button>
+          <button class="menu-button" onclick="openMobileContent('PT5', false, null)">&nbsp;&nbsp;Projekte Team 5</button>
+          <button class="menu-button" onclick="openMobileContent('PT6', true, 2)">&nbsp;&nbsp;Projekte Team 6</button>
           <div class="submenu-2" id="PT6-submenu">
-            <button onclick="openMobileContent('PT6A', false, null)">--Archiv</button>
+            <button class="menu-button" onclick="openMobileContent('PT6A', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Archiv</button>
           </div>
-          <button onclick="openMobileContent('BO', true, 2)">-Berufsorientierung</button>
+          <button class="menu-button" onclick="openMobileContent('BO', true, 2)">&nbsp;&nbsp;Berufsorientierung</button>
           <div class="submenu-2" id="BO-submenu">
-            <button onclick="openMobileContent('Ver', false, null)">--Veranstaltungen</button>
-            <button onclick="openMobileContent('beb', false, null)">--Berufseinsteigsbegleiter</button>
-            <button onclick="openMobileContent('bp', false, null)">--Betribspraktikum</button>
+            <button class="menu-button" onclick="openMobileContent('Ver', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Veranstaltungen</button>
+            <button class="menu-button" onclick="openMobileContent('beb', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Berufseinsteigsbegleiter</button>
+            <button class="menu-button" onclick="openMobileContent('bp', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;Betribspraktikum</button>
           </div>
         </div>
-        <button onclick="openMobileContent('main-Pinnwand', true, 1)">Pinnwand</button>
+        <button class="menu-button" onclick="openMobileContent('main-Pinnwand', true, 1)">Pinnwand</button>
         <div class="submenu-1" id="main-Pinnwand-submenu">
-          <button onclick="openMobileContent('ASJ17/18', false, null)">-Archiv SJ 2017/2018</button>
+          <button class="menu-button" onclick="openMobileContent('ASJ17/18', false, null)">&nbsp;&nbsp;Archiv SJ 2017/2018</button>
         </div>
-        <button onclick="openMobileContent('main-Galerie', true, 1)">Galerie</button>
+        <button class="menu-button" onclick="openMobileContent('main-Galerie', true, 1)">Galerie</button>
         <div class="submenu-1" id="main-Galerie-submenu">
-          <button onclick="openMobileContent('Kl-G', true, 2)">-Klassen</button>
+          <button class="menu-button" onclick="openMobileContent('Kl-G', true, 2)">&nbsp;&nbsp;Klassen</button>
           <div class="submenu-2" id="Kl-G-submenu">
-            <button onclick="openMobileContent('5k', false, null)">--5. Klassen</button>
-            <button onclick="openMobileContent('6k', false, null)">--6. Klassen</button>
-            <button onclick="openMobileContent('7k', false, null)">--7. Klassen</button>
-            <button onclick="openMobileContent('8k', false, null)">--8. Klassen</button>
-            <button onclick="openMobileContent('9k', false, null)">--9. Klassen</button>
-            <button onclick="openMobileContent('10k', false, null)">--10. Klassen</button>
-            <button onclick="openMobileContent('SKL', false, null)">--SKL</button>
+            <button class="menu-button" onclick="openMobileContent('5k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;5. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('6k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;6. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('7k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;7. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('8k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;8. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('9k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;9. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('10k', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;10. Klassen</button>
+            <button class="menu-button" onclick="openMobileContent('SKL', false, null)">&nbsp;&nbsp;&nbsp;&nbsp;SKL</button>
           </div>
-          <button onclick="openMobileContent('Schule-G', false, null)">-Schule</button>
+          <button class="menu-button" onclick="openMobileContent('Schule-G', false, null)">&nbsp;&nbsp;Schule</button>
         </div>
-        <button onclick="openMobileContent('main-Impressum', true, null)">Impressum</button>
+        <button class="menu-button" onclick="openMobileContent('main-Impressum', true, null)">Impressum</button>
       </div>
-      <button class="icon" onclick="myFunction()"><img src="/icon/icon-menu.png" width="100%" height="100%"></button>
     </div>
     <div class="contentbody">
       <div id="main" class="content">
