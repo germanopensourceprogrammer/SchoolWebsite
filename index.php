@@ -1,8 +1,9 @@
 <?php
 $homepath = "Home.html";
+$mobilehomepath = "Mobile.html";
 $contentpath = "content/Content-";
 $contentmark = "|||CONTENT|||";
-$mobilehomepath = "Mobile.html";
+$linkmarker = "|||LINK-MARK|||";
 //---Config End---
 function isMobile() {
     return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
@@ -10,6 +11,9 @@ function isMobile() {
 function readContent($path, $contentmark, $contentpath) {
   $homefile = file($path);
   foreach ($homefile as $line) {
+    if (strpos($line, $linkmarker)) {
+      // code...
+    }
     if (strpos($line, $contentmark)) {
       $speccontentpath = $contentpath . substr(substr($line, strrpos($line, $contentmark) + strlen($contentmark) + 1),0 , -3);
       if (file_exists($speccontentpath . ".html")) {
@@ -30,5 +34,7 @@ if (isMobile()) {
   readContent($homepath, $contentmark, $contentpath);
 }
 
-
+function websitemarklink($linkmarker) {
+  $linkname = $_GET['link'];
+}
  ?>

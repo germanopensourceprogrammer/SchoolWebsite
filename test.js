@@ -52,7 +52,7 @@ function myFunction() {
     x.style.display = "block";
   }
 }
-function onMobileload(){
+function onMobileload(idk){
   closeSubmenus(1);
   var contents = document.getElementsByClassName("content");
   for (var i = 0; i < contents.length; i++) {
