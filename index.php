@@ -11,9 +11,6 @@ function isMobile() {
 function readContent($path, $contentmark, $contentpath, $linkmarker) {
   $homefile = file($path);
   foreach ($homefile as $line) {
-    if (strpos($line, $linkmarker)) {
-      // code...
-    }
     if (strpos($line, $contentmark)) {
       $speccontentpath = $contentpath . substr(substr($line, strrpos($line, $contentmark) + strlen($contentmark) + 1),0 , -3);
       if (file_exists($speccontentpath . ".html")) {
