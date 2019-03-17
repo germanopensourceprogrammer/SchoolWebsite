@@ -58,7 +58,7 @@ function onMobileload(idk){
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.display = "none";
   }
-  openContent(idk);
+  openContent("main");
 }
 function openMobileContent(tagName, hasSubmenu, submenulevel){
   if (hasSubmenu) {
