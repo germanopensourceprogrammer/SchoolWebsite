@@ -8,7 +8,7 @@ $linkmarker = "|||LINK-MARK|||";
 function isMobile() {
     return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 }
-function readContent($path, $contentmark, $contentpath) {
+function readContent($path, $contentmark, $contentpath, $linkmarker) {
   $homefile = file($path);
   foreach ($homefile as $line) {
     if (strpos($line, $contentmark)) {
@@ -19,16 +19,21 @@ function readContent($path, $contentmark, $contentpath) {
         echo "<h1>Content not found</h1><br> Please Contact an Admin";
       }
 
-    }else {
+    }else if (strpos($line, $linkmarker)) {
+      if(!isset($_GET["link"])) str_replace($linkmarker, "main", $line);
+      else {
+        echo str_replace($linkmarker, $_GET['link'], $line);
+      }
+    } else {
         echo $line;
     }
   }
 }
 
 if (isMobile()) {
-  readContent($mobilehomepath, $contentmark, $contentpath);
+  readContent($mobilehomepath, $contentmark, $contentpath, $linkmarker);
 }else {
-  readContent($homepath, $contentmark, $contentpath);
+  readContent($homepath, $contentmark, $contentpath, $linkmarker);
 }
 
 function websitemarklink($linkmarker) {
