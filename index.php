@@ -29,13 +29,15 @@ function readContent($path, $contentmark, $contentpath, $linkmarker) {
     }
   }
 }
-
+if(isset($_GET["link"])){
 if (isMobile()) {
   readContent($mobilehomepath, $contentmark, $contentpath, $linkmarker);
 }else {
   readContent($homepath, $contentmark, $contentpath, $linkmarker);
 }
-
+}else {
+  header("Location: ?link=main");
+}
 function websitemarklink($linkmarker) {
   $linkname = $_GET['link'];
 }
