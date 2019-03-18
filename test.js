@@ -61,6 +61,8 @@ function onMobileload(idk){
   openContent(idk);
 }
 function openMobileContent(tagName, hasSubmenu, submenulevel){
+  //console.log(1);
+  //console.log(tagName);
   if (hasSubmenu) {
     if (submenulevel == null) {
       closeSubmenus(1);
@@ -87,6 +89,8 @@ function closeSubmenus(submenulevel){
 
 // desktop subsidemenu
 function openContent(tagName, hasSubmenu, submenulevel){
+  //console.log(tagName);
+  history.pushState(null, null, "?link="+tagName);
   if (hasSubmenu) {
     for (var i = 0; i < 5; i++) {
       closeSubsidelinks(submenulevel + i)
