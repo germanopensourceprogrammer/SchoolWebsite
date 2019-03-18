@@ -22,13 +22,14 @@ function openTabcontent(tagName,elmnt,color,sidenav) {
   openContent("main-"+tagName);
 }
 
-function afterpageload() {
+function afterpageload(idk) {
   document.getElementById("defaultOpen").click();
   closeSubsidelinks(1);
   var contents = document.getElementsByClassName("content");
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.display = "none";
   }
+  openContent(idk);
 }
 // end or Tabline
 
