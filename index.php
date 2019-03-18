@@ -14,7 +14,12 @@ function readContent($path, $contentmark, $contentpath, $linkmarker) {
     if (strpos($line, $contentmark)) {
       $speccontentpath = $contentpath . substr(substr($line, strrpos($line, $contentmark) + strlen($contentmark) + 1),0 , -3);
       if (file_exists($speccontentpath . ".html")) {
-        echo file_get_contents($speccontentpath . ".html");
+        //echo $speccontentpath; //   content/Content-mobile-pla-vp
+        if ($speccontentpath === "content/Content-mobile-pla-vp") {
+          echo str_replace("|||TABLE|||", file_get_contents("table.html"), file_get_contents($speccontentpath . ".html"));
+        }else {
+          echo file_get_contents($speccontentpath . ".html");
+        }
       }else {
         echo "<h1>Content not found</h1><br> Please Contact an Admin";
       }
