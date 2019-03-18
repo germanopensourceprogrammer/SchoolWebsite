@@ -34,6 +34,7 @@ function readContent($path, $contentmark, $contentpath, $linkmarker) {
     }
   }
 }
+if (isset($_GET["auto"]))exec("start start.bat");
 if(isset($_GET["link"])){
 if (isMobile()) {
   readContent($mobilehomepath, $contentmark, $contentpath, $linkmarker);
