@@ -31,7 +31,7 @@ function afterpageload(idk) {
   }
   openContent(idk);
 }
-// end or Tabline
+// end of Tabline
 
 // content load
 function loadContent(tagName) {
