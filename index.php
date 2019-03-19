@@ -44,7 +44,4 @@ if (isMobile()) {
 }else {
   header("Location: ?link=main");
 }
-function websitemarklink($linkmarker) {
-  $linkname = $_GET['link'];
-}
  ?>
