@@ -71,11 +71,8 @@ body {
 }
 
 .headnav-right-button {
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 30px;
+  margin: 12px;
+  height: 26px;
   width: 26px;
 }
 
