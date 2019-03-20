@@ -50,22 +50,26 @@ body {
 
  .headnav-left {
   float: left;
-  width: 50px;
+  width: 15.625%;
   height: 50px;
+  position: static;
  }
 
  .headnav-middle {
    float: left;
-   width: 72%;
+   width: 68.75%;
+   height: 50px;
    text-align: center;
    padding-top: 7px;
-   padding-bottom: 7px;
+   position: static;
+   margin: auto;
  }
 
 .headnav-right {
   float: right;
-  width: 50px;
+  width: 15.625%;
   height: 50px;
+  position: static;
 }
 
 .headnav-right-button {
