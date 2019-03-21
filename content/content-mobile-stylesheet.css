@@ -20,6 +20,22 @@ html, body {
   width: 100%;
 }
 
+.content-pla-vp-1-head {
+  width: 100%;
+}
+
+.content-pla-vp-1-middle {
+  width: 100%;
+}
+
+.content-pla-vp-1-middle-content {
+  width: 100%;
+}
+
+#bolder-1 {
+  font-weight: bolder;
+}
+
 .content-headline {
   color: white;
   text-align: center;
@@ -87,6 +103,15 @@ th {
 
 td {
   font-size: 12px;
+}
+
+.table-list {
+  text-align: left;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 2px;
+  background-color: #424242;
 }
 
 #center {
