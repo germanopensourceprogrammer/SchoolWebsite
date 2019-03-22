@@ -16,7 +16,7 @@ function readContent($path, $contentmark, $contentpath, $linkmarker) {
       if (file_exists($speccontentpath . ".html")) {
         //echo $speccontentpath; //   content/Content-mobile-pla-vp
         if ($speccontentpath === "content/Content-mobile-pla-vp") {
-          echo str_replace("|||TABLE|||", file_get_contents("table.html"), file_get_contents($speccontentpath . ".html"));
+          echo str_replace("|||HEADER2|||", file_get_contents("header2.html"), str_replace("|||HEADER1|||", file_get_contents("header.html"), str_replace("|||TABLE|||", file_get_contents("table.html"), file_get_contents($speccontentpath . ".html")));
         }else {
           echo file_get_contents($speccontentpath . ".html");
         }
