@@ -26,6 +26,7 @@ html, body {
 
 .content-pla-vp-1-middle {
   width: 100%;
+  justify-content: center;
 }
 
 .content-pla-vp-1-middle-content {
@@ -112,6 +113,7 @@ td {
   color: white;
   padding: 2px;
   background-color: #424242;
+  justify-content: center;
 }
 
 #center {
