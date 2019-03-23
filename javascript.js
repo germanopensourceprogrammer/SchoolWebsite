@@ -54,6 +54,7 @@ function myFunction() {
   }
 }
 function onMobileload(idk){
+  onload();
   closeSubmenus(1);
   var contents = document.getElementsByClassName("content");
   for (var i = 0; i < contents.length; i++) {
