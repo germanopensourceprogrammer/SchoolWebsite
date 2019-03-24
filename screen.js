@@ -123,4 +123,28 @@ function onload() {
     }
   }
 
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('normal-text')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.406  + "px";
+    }
+  } else {
+    var elements = document.getElementsByName('normal-text')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.406  + "px";
+    }
+  }
+
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('big-text')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 4.8662  + "px";
+    }
+  } else {
+    var elements = document.getElementsByName('big-text')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 4.8662  + "px";
+    }
+  }
+
 }
