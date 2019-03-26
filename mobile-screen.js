@@ -126,12 +126,12 @@ function onload() {
   if (reswidth < resheight) {
     var elements = document.getElementsByName('normal-text')
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.fontSize = reswidth / 100 * 3.406  + "px";
+      elements[i].style.fontSize = reswidth / 100 * 3.65  + "px";
     }
   } else {
     var elements = document.getElementsByName('normal-text')
     for (var i = 0; i < elements.length; i++) {
-      elements[i].style.fontSize = resheight / 100 * 3.406  + "px";
+      elements[i].style.fontSize = resheight / 100 * 3.65  + "px";
     }
   }
 
@@ -144,6 +144,43 @@ function onload() {
     var elements = document.getElementsByName('big-text')
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.fontSize = resheight / 100 * 4.8662  + "px";
+    }
+  }
+
+
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('table-vp')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.163  + "px";
+    }
+  } else {
+    var elements = document.getElementsByName('table-vp')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.163  + "px";
+    }
+  }
+
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('table-vp-th')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.65  + "px";
+    }
+  } else {
+    var elements = document.getElementsByName('table-vp-th')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.65  + "px";
+    }
+  }
+
+  if (reswidth < resheight) {
+    var elements = document.getElementsByClassName('table-list')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.65  + "px";
+    }
+  } else {
+    var elements = document.getElementsByClassName('table-list')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.65  + "px";
     }
   }
 
