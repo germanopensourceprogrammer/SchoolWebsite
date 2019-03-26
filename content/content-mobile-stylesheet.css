@@ -91,7 +91,7 @@ table {
 
 th, td {
   text-align: left;
-  padding: 3px;
+  /*padding: 3px;*/
   color: white;
 }
 
@@ -99,11 +99,11 @@ tr:nth-child(even){background-color: #424242}
 
 th {
   background-color: #2E2E2E;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 td {
-  font-size: 12px;
+  /*font-size: 12px;*/
 }
 
 .table-list {
