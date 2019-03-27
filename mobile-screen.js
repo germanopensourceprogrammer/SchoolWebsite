@@ -184,4 +184,24 @@ function onload() {
     }
   }
 
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('button-link-datei')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.89  + "px";
+      elements[i].style.paddingTop = reswidth / 100 * 3.41  + "px";
+      elements[i].style.paddingBottom = reswidth / 100 * 3.41  + "px";
+      elements[i].style.paddingLeft = reswidth / 100 * 6.08  + "px";
+      elements[i].style.paddingRight = reswidth / 100 * 6.08  + "px";
+    }
+  } else {
+    var elements = document.getElementsByName('button-link-datei')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.89  + "px";
+      elements[i].style.paddingTop = resheight / 100 * 3.41  + "px";
+      elements[i].style.paddingBottom = resheight / 100 * 3.41  + "px";
+      elements[i].style.paddingLeft = resheight / 100 * 6.08  + "px";
+      elements[i].style.paddingRight = resheight / 100 * 6.08  + "px";
+    }
+  }
+
 }
