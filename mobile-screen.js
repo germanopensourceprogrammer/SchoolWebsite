@@ -204,4 +204,22 @@ function onload() {
     }
   }
 
+  if (reswidth < resheight) {
+    var elements = document.getElementsByName('table-supz')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = reswidth / 100 * 3.65  + "px";
+      elements[i].style.padding = reswidth / 100 * 3.65  + "px";
+      elements[i].style.width = 100  + "%";
+      elements[i].style.margin = 0;
+    }
+  } else {
+    var elements = document.getElementsByName('table-supz')
+    for (var i = 0; i < elements.length; i++) {
+      elements[i].style.fontSize = resheight / 100 * 3.65  + "px";
+      elements[i].style.padding = resheight / 100 * 3.65  + "px";
+      elements[i].style.width = 100  + "%";
+      elements[i].style.margin = 0;
+    }
+  }
+
 }
