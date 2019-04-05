@@ -34,14 +34,54 @@ function readContent($path, $contentmark, $contentpath, $linkmarker) {
     }
   }
 }
-if (isset($_GET["auto"]))exec("start start.bat");
-if(isset($_GET["link"])){
-if (isMobile()) {
-  readContent($mobilehomepath, $contentmark, $contentpath, $linkmarker);
-}else {
-  readContent($homepath, $contentmark, $contentpath, $linkmarker);
+$pwd = "katha";
+$load = false;
+//var_dump($_COOKIE);
+if (!empty($_COOKIE['pwd'])) {
+  if ($_COOKIE['pwd'] == hash("ripemd160",$pwd)) {
+    $load = true;
+  }
 }
+
+if (!empty($_POST['pwd']) && !$load){
+  if ($_POST['pwd'] == $pwd) {
+    $load=true;
+  }else {
+    form();
+    echo "Wrong Password";
+  }
 }else {
-  header("Location: ?link=main");
+  if (!$load) {
+    form();
+  }
 }
+
+if ($load){
+  //echo "R";
+  if (!empty($_POST['pwd'])) {
+    setcookie("pwd", hash("ripemd160",$_POST['pwd']));
+  }
+  if (isset($_GET["auto"]))exec("start start.bat");
+  if(isset($_GET["link"])){
+  if (isMobile()) {
+    readContent($mobilehomepath, $contentmark, $contentpath, $linkmarker);
+  }else {
+    readContent($homepath, $contentmark, $contentpath, $linkmarker);
+  }
+  }else {
+    header("Location: ?link=main&pwd=katha");
+  }
+
+}
+
+function form()
+{
+  echo "<form action=\"index.php\" method=\"post\">
+    <div class=\"container\">
+      <label for=\"psw\"><b>Password</b></label>
+      <input type=\"password\" placeholder=\"Enter Password\" name=\"pwd\" required>
+      <button type=\"submit\">Login</button>
+  </form>";
+}
+
  ?>
