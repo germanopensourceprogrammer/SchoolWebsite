@@ -1,5 +1,8 @@
 function Theme() {
-    setTheme(getCookie("theme"));
+    var theme =  getCookie("theme");
+    if (theme == undefined)
+        theme = "light";
+    setTheme(theme);
 }
 
 function setTheme(path) {
