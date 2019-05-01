@@ -8,6 +8,8 @@ function setTheme(path) {
     console.log(document.cookie);
     var linkelement = document.getElementsByName("theme-stylesheet")[0];
     linkelement.href = "mobile" + path + "theme.css";
+    if (path == "dark")
+        document.getElementsByName("ThemeSlider")[0].checked = true;
 }
 
 function onThemeSlider() {
