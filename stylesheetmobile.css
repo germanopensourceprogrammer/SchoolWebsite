@@ -112,3 +112,18 @@ button:focus {outline:0;}
   text-align: left;
   position: relative;
 }
+
+.menu-set-theme-left {
+	float: left;
+	text-align: center;
+}
+
+.menu-set-theme-middle {
+	float: left;
+	text-align: center;
+}
+
+.menu-set-theme-right {
+	float: left;
+	text-align: center;
+}
