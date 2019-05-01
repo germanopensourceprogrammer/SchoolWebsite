@@ -17,11 +17,6 @@ function onThemeSlider() {
     } else {
         setTheme("light");
     }
-<<<<<<< HEAD
-
-  }
-//document.getElementsByName('Theme_mobile-container').style.color = "black";
-=======
 }
 
 function getCookie(name) {
@@ -29,4 +24,3 @@ function getCookie(name) {
     var parts = value.split("; " + name + "=");
     if (parts.length == 2) return parts.pop().split(";").shift();
 }
->>>>>>> 3162e7dcc4dd9e9b5d54393ceb2527cda6ce8aff
