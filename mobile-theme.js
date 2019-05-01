@@ -1,18 +1,32 @@
 function Theme() {
+    setTheme(getCookie("theme"));
+}
 
-	if (theme = "black") {
-    var elements = document.getElementsByName('Theme_mobile-container')
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.color = "white";
-      elements[i].style.height = reswidth / 100 * 13  + "px";
+function setTheme(path) {
+    console.log(document.cookie);
+    document.cookie = "theme=" + path + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    console.log(document.cookie);
+    var linkelement = document.getElementsByName("theme-stylesheet")[0];
+    linkelement.href = "mobile" + path + "theme.css";
+}
+
+function onThemeSlider() {
+    var slider = document.getElementsByName("ThemeSlider")[0];
+    if (slider.checked) {
+        setTheme("dark");
+    } else {
+        setTheme("light");
     }
-  }
-	if (theme = "light") {
-    var elements = document.getElementsByName('Theme_mobile-container')
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.color = "white";
-			elements[i].style.height = resheight / 100 * 13  + "px";
-    }
+<<<<<<< HEAD
 
   }
 //document.getElementsByName('Theme_mobile-container').style.color = "black";
+=======
+}
+
+function getCookie(name) {
+    var value = "; " + document.cookie;
+    var parts = value.split("; " + name + "=");
+    if (parts.length == 2) return parts.pop().split(";").shift();
+}
+>>>>>>> 3162e7dcc4dd9e9b5d54393ceb2527cda6ce8aff
