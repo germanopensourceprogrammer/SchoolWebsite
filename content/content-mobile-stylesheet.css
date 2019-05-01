@@ -87,6 +87,7 @@ table {
   margin-right: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+  border: none;
 }
 
 th, td {
