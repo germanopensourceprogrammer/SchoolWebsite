@@ -54,6 +54,7 @@ function myFunction() {
   }
 }
 function onMobileload(idk){
+  Theme();
   onload();
   window.onresize = function (event) {
     onload();
