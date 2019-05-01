@@ -11,7 +11,7 @@ function onload() {
     var elements = document.getElementsByName('headnav-size')
     for (var i = 0; i < elements.length; i++) {
       elements[i].style.width = resheight / 100 * 13  + "px";
-      elements[i].style.height = resheight / 100 * 13  + "px";
+			elements[i].style.height = resheight / 100 * 13  + "px";
     }
   }
 
