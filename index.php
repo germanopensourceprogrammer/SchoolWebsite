@@ -38,7 +38,7 @@ $pwd = "katha";
 $load = false;
 //var_dump($_COOKIE);
 if (!empty($_COOKIE['pwd'])) {
-  if ($_COOKIE['pwd'] == hash("ripemd160",$pwd)) {
+  if ($_COOKIE['pwd'] == hash("ripemd160",$pwd.$_SERVER['REMOTE_ADDR'])) {
     $load = true;
   }
 }
@@ -59,7 +59,7 @@ if (!empty($_POST['pwd']) && !$load){
 if ($load){
   //echo "R";
   if (!empty($_POST['pwd'])) {
-    setcookie("pwd", hash("ripemd160",$_POST['pwd']));
+    setcookie("pwd", hash("ripemd160",$_POST['pwd'].$_SERVER['REMOTE_ADDR']));
   }
   if (isset($_GET["auto"]))exec("start start.bat");
   if(isset($_GET["link"])){
