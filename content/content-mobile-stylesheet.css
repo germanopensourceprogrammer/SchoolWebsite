@@ -1,12 +1,10 @@
 html, body {
   height: 100%;
-  background-color: #555;
 }
 
 .content-body {
   margin: 0;
   width: 100%;
-  background-color: #555;
 }
 
 .content-pla-vp-1 {
@@ -38,22 +36,16 @@ html, body {
 }
 
 .content-headline {
-  color: white;
   text-align: center;
-  /*background-color: #007000;*/
   padding: 5px;
 }
 
 .content-text {
-  color: white;
-  background-color: #555;
   font-size: 10px;
   padding: 15px;
 }
 
 .content-table {
-  color: white;
-  background-color: #555;
   padding: 0;
 }
 
@@ -64,16 +56,10 @@ html, body {
 }
 
 .content-link:link, .content-link:visited {
-  background-color: #f44336;
-  color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-.content-link:active {
-  background-color: green;
 }
 
 #content-text-important {
@@ -92,28 +78,14 @@ table {
 
 th, td {
   text-align: left;
-  /*padding: 3px;*/
-  color: white;
 }
 
-tr:nth-child(even){background-color: #424242}
-
-th {
-  background-color: #2E2E2E;
-  /*font-size: 14px;*/
-}
-
-td {
-  /*font-size: 12px;*/
-}
 
 .table-list {
   text-align: left;
   border: none;
   font-size: 16px;
-  color: white;
   padding: 2px;
-  background-color: #424242;
   justify-content: center;
 }
 
