@@ -1,0 +1,45 @@
+html, body {
+    background-color: #FFF;
+}
+
+.content-body {
+    background-color: #FFF;
+}
+
+.content-headline {
+    color: #000;
+}
+
+.content-text {
+    color: #000;
+    background-color: #FFF;
+}
+
+.content-table {
+    color: #000;
+    background-color: #FFF;
+}
+
+.content-link:link, .content-link:visited {
+    background-color: green;
+    color: #000;
+}
+
+.content-link:active {
+    background-color: red;
+}
+
+th, td {
+    color: black;
+}
+
+tr:nth-child(even){background-color: #F6F6F6}
+
+th {
+    background-color: #f1f1f1;
+}
+
+.table-list {
+    color: black;
+    background-color: #f1f1f1;
+}

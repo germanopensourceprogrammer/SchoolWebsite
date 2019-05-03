@@ -1,3 +1,32 @@
 .content-headline {
-    background-color: #000070;
+    background-color: #007000;
+}
+body {
+    background-color: #FFFFFF;
+}
+.mobile-container {
+    background-color: #FFFFFF;
+    color: black;
+}
+.topnav {
+    background-color: #EEeeee;
+}
+.topnav a {
+    color: black;
+}
+.topnav a.icon {
+    background: #FFF;
+}
+.headnav-right-button-white {
+    background-color: #111;
+}
+.headnav-right-button-black {
+    background-color: #FFF;
+}
+.icon {
+    background-color: #F6F6F6;
+}
+.menu-button {
+    color: black;
+    background-color: #f1f1f1;
 }
