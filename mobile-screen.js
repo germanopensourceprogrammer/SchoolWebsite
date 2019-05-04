@@ -261,7 +261,7 @@ function onload() {
 	} else {
 		var elements = document.getElementsByClassName('menu-set-theme')
 		for (var i = 0; i < elements.length; i++) {
-			elements[i].style.wpaddingLeft = 0 + "px";
+			elements[i].style.paddingLeft = 0 + "px";
 			elements[i].style.paddingRight = 0 + "px";
 		}
 	}
@@ -277,8 +277,40 @@ function onload() {
 		var elements = document.getElementsByName('menu-set-theme-name-side')
 		for (var i = 0; i < elements.length; i++) {
 			elements[i].style.height = resheight / 100 * 8.273  + "px";
-			elements[i].style.wpaddingLeft = 0 + "px";
+			elements[i].style.paddingLeft = 0 + "px";
 			elements[i].style.paddingRight = 0 + "px";
+		}
+	}
+
+	if (reswidth < resheight) {
+		var elements = document.getElementsByName('menu-set-theme-name-side-div-text')
+		for (var i = 0; i < elements.length; i++) {
+			elements[i].style.fontSize = reswidth / 100 * 3.89  + "px";
+			elements[i].style.height = reswidth / 100 * 3.89  + "px";
+			elements[i].style.paddingTop = reswidth / 100 * 2.19125 + "px";
+			elements[i].style.paddingLeft = reswidth / 100 * 8.1143 + "px";
+			elements[i].style.paddingRight = 0 + "px";
+		}
+	} else {
+		var elements = document.getElementsByName('menu-set-theme-name-side-div-text')
+		for (var i = 0; i < elements.length; i++) {
+			elements[i].style.fontSize = resheight / 100 * 3.89  + "px";
+			elements[i].style.height = resheight / 100 * 3.89  + "px";
+			elements[i].style.paddingTop = resheight / 100 * 2.19125 + "px";
+			elements[i].style.paddingLeft = resheight / 100 * 8.1143 + "px";
+			elements[i].style.paddingRight = 0 + "px";
+		}
+	}
+
+	if (reswidth < resheight) {
+		var elements = document.getElementsByName('menu-set-theme-middle-switch')
+		for (var i = 0; i < elements.length; i++) {
+
+		}
+	} else {
+		var elements = document.getElementsByName('menu-set-theme-middle-switch')
+		for (var i = 0; i < elements.length; i++) {
+
 		}
 	}
 
